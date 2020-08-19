@@ -28,14 +28,8 @@ app.post("/repositories", (request, response) => {
     likes: 0,
   };
 
-  // if (likes === 0) {
-  //   repositories.push(repository);
-  //   return response.json(repository);
-  // } else {
-  //   return response.send('rep precisa ser criado com likes 0');
-  // }
-
   repositories.push(repository);
+  
   return response.json(repository);
 });
 
